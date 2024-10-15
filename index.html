@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SEARCH</li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SEARCH</li>
+        </ul>
+    </section>
+    <div class="main">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <img src="assets/logo.svg" class="logo">
+                     <img src="assets/menu.svg" class="menu">
+
+                </li>
+                <li>
+                    <button class="english">English</button>
+                    <button class="signin">Sign In</button>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="box"></div>
+        <div class="content"  onclick="hidemenu()">
+            
+            <span class="heading">Unlimited <span id="element"></span></span>
+            <span>Watch anywhere. Cancel anytime.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="email"> <input type="text" name="email" id="email" placeholder="Email address"><button>Get
+                    Started &nbsp; <i class="arrow right"></i></button>
+            </div>
+        </div>
+    </div>
+    <section class="features" onclick="hidemenu()">
+        <hr>
+        <div class="box1">
+            <div class="box1-left">
+                <span>Enjoy on your TV</span>
+                <span>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</span>
+            </div>
+            <div class="box1-right">
+                <img src="assets/tv.png">
+                <video src="assets/video-tv.m4v" preload="metadata" autoplay></video>
+            </div>
+        </div>
+        <hr>
+        <div class="box2">
+            <div class="box2-left">
+                <img src="assets/mobile.jpg">
+            </div>
+            <div class="box2-right">
+                <span>Download your shows to watch offline</span>
+                <span>Save your favorites easily and always have something to watch.</span>
+            </div>
+        </div>
+        <hr>
+        <div class="box3">
+            <div class="box3-left">
+                <span>Watch everywhere</span>
+                <span>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+            </div>
+            <div class="box3-right">
+                <img src="assets/devices.png">
+            </div>
+
+        </div>
+        <hr>
+    </section>
+    <section class="query" onclick="hidemenu()">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+
+        <div class="qna1">
+            <div class="q1">
+                <div>What is Netflix</div>
+                <div id="cross1">+</div>
+            </div>
+            <div class="a1">
+                <div>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries, and more on thousands of internet-connected devices.</div>
+                <br>
+                <div>You can watch as much as you want, whenever you want without a single commercial – all for one low
+                    monthly price. There's always something new to discover and new TV shows and movies are added every
+                    week!</div>
+            </div>
+        </div>
+
+<div class="qna2">
+    <div class="q2">
+        <div>How much does Netflix cost?</div>
+        <div id="cross2">+</div>
+    </div>
+    <div class="a2">
+        <div>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.</div>
+    </div>
+</div>
+
+<div class="qna3">
+        <div class="q3">
+            <div>Where can I watch?</div>
+            <div id="cross3">+</div>
+        </div>
+        <div class="a3">
+            <div>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</div>
+            <br>
+            <div>You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+        </div>
+</div>
+
+<div class="qna4">
+            <div class="q4">
+            <div>How do I cancel?</div>
+            <div id="cross4">+</div>
+        </div>
+        <div class="a4">
+            <div>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+        </div>
+</div>
+
+<div class="qna5">
+            <div class="q5">
+            <div>What can I watch on Netflix?</div>
+            <div id="cross5">+</div>
+        </div>
+        <div class="a5">
+            <div>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+        </div>
+</div>
+
+<div class="qna6">
+            <div class="q6">
+            <div>Is Neflix good for kids?</div>
+            <div id="cross6">+</div>
+        </div>
+        <div class="a6">
+            <div>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+            <br>
+            <div>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</div>
+        </div>
+</div>
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['MOVIES', 'TV SHOWS', ' and more!' ,' MOVIES, TV SHOWS and more!'],
+      typeSpeed: 50,
+    });
+  </script>
+</html>
